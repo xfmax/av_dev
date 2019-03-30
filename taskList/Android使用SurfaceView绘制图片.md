@@ -139,5 +139,5 @@ public class SurfaceViewImpl extends SurfaceView implements SurfaceHolder.Callba
 }
 
 ```
-
+如果你想看完整代码，可以访问：https://github.com/xfmax/av_dev/tree/master/MyApplication/surfaceview
 
