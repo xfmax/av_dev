@@ -24,6 +24,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
     private Button record, play, record_stop, play_stop;
     private int SAMPLING_RATE = 44100;
     private int CHANNEL_CONFIG = AudioFormat.CHANNEL_IN_MONO;
@@ -84,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     CHANNEL_CONFIG, AudioFormat.ENCODING_PCM_16BIT, minBufferSize);
             final File file = new File(Environment.getExternalStorageDirectory(), "test.pcm");
             if (file.mkdirs()) {
-                Log.d("xbase", "dir 存在！");
+                Log.d(TAG, "dir 存在！");
             }
 
             if (file.exists()) {
@@ -159,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             if (file.exists()) {
-                Log.d("xbase", "play: ");
+                Log.d(TAG, "file exist ");
             }
 
 
