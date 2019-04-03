@@ -2,7 +2,7 @@ Android 音视频从入门到提高 —— 任务列表》
 
 
 
-    1. 在 Android 平台绘制一张图片，使用至少 3 种不同的 API，ImageView，SurfaceView，自定义 View
+    a1. 在 Android 平台绘制一张图片，使用至少 3 种不同的 API，ImageView，SurfaceView，自定义 View
 
 
 

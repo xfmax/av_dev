@@ -151,7 +151,8 @@ public class MainActivity extends AppCompatActivity {
             int minBufferSize = AudioTrack.getMinBufferSize(SAMPLING_RATE, AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
             audioTrack = new AudioTrack(new AudioAttributes.Builder()
                     .setUsage(AudioAttributes.USAGE_MEDIA)
-                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC).build(),
+                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                    .build(),
                     new AudioFormat.Builder().setSampleRate(SAMPLING_RATE)
                             .setEncoding(AudioFormat.ENCODING_PCM_16BIT)
                             .setChannelMask(AudioFormat.CHANNEL_OUT_MONO).build(),
