@@ -1,1 +1,1 @@
-include ':app', ':surfaceview'
+include ':app', ':surfaceview', ':audiorecord', ':mylibrary'
